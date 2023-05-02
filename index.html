@@ -5,10 +5,143 @@
     <title>5280 Landmarks</title>
     <link rel="stylesheet" href="stylesheets/reset.css" title="text/css" />
     <link rel="stylesheet" href="stylesheets/main.css" title="text/css" />
+    <html>
   </head>
   <body>
+    <header>
+      5280 Landmarks
+      <!-- <ul>
+        Login
+      </ul> -->
+    </header>
+    <nav>
+      * Buildings * Art * Featured
+    </nav>
+    <section>
+      <h2>
+        Denver Art Museum
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, quis idque munere est ex. Eos id soluta meliore menandri, sed ex graeci prompta sapientem. Cum in verterem partiendo, quod partiendo principes vix et. Ne eam virtute abhorreant. At qui doming nemore mediocritatem, ei pri bonorum blandit, vim elitr recusabo salutatus eu.
+
+        Mea adhuc persecuti in, dolorum mentitum ullamcorper his ut. Graeci scriptorem cum ea, an ignota signiferumque nec. No dicunt sanctus moderatius sed, meliore inermis ei mea. Utinam impedit maiestatis sea ad, quis efficiendi eu mel, ea solet placerat phaedrum vis. Et vix causae aliquam, commodo blandit imperdiet ex his.
+
+        Duo an eleifend omittantur, te sint civibus recusabo eos. An ius corpora definiebas cotidieque. Eu pri reque sapientem contentiones, fierent conclusionemque mei in. Saepe veniam ne mei, ut facilisi omittantur nec.
+
+        Nam ad quas consul salutandi, sea ad verterem quaestio. Mei ea quot dictas. Eam choro eloquentiam eu, vim cu facete scriptorem. Mel at latine veritus.
+
+      </p>
+    </section>
+    <aside>
+      <h2> Larimer Square</h2>
+      <h2> Millenium Bridge</h2>
+      <h2> Molly Brown House</h2>
+    </aside>
+    <footer>
+      <p>
+        Alia utinam maiorum pro te, eum ex sonet putent discere. Mea cu possit forensibus comprehensam. Mel te primis commodo, nibh labore nostrum ei mel. Ex vix adolescens suscipiantur, malorum iuvaret usu id. At mea lobortis pertinacia, scripta sententiae et mei, sumo partem pro ex. Nam movet facete ex, eos rebum nulla qualisque ea, vis malis clita efficiantur ut. At vel lorem paulo soluta, ancillae quaestio no quo, id vim blandit voluptatum.
+      </p>
+    </footer>
+
 
   </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
 </html>
 
 
